@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+h2 {
+  color: #ff0;
+  transform: scale(1);
+  animation: infinite zoomIn 2s  ease-in-out;
+}
+
+@keyframes zoomIn {
+  0%,
+  100% {
+    transform: scale(2);
+    color: rgb(203, 237, 9);
+  }
+  50% {
+    transform: scale(1);
+    color: rgb(84, 96, 59);
+  }
+}
